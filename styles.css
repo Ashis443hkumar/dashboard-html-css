@@ -15,7 +15,7 @@ body{
   width: 22%;
   min-height: 90vh;
   height: 100%;
-  background-color: rgb(77, 16, 134);
+  background-color: #111827;
   position: fixed;
   top: 0;
   left: 0;
@@ -36,10 +36,19 @@ body{
 }
 .left_div .navigation ul li {
   list-style: none;
-  margin: 6px 10px;
+  padding: 15px 0px;
+  transition: 0.3s ease;
+}
+.left_div .navigation ul li:nth-child(1){
+  border-left: 1px solid #fff;
+}
+.left_div .navigation ul li:hover i,
+.left_div .navigation ul li:hover a{
+  color: #f3f4f6;
 }
 .left_div .navigation ul li:hover {
-  background-color: cyan;
+  background-color: #253047;
+  cursor: pointer;
 }
 .left_div .navigation ul li i {
   width: 30px;
@@ -48,17 +57,29 @@ body{
   text-align: center;
   font-size: 14px;
   margin: 0px 10px 0px 25px;
-  color: red;
-}
-.left_div .navigation ul li i,
-.left_div .navigation ul li a {
-  color: red;
+  color: rgb(134,141,151);
 }
 .left_div .navigation ul li a {
   text-decoration: none;
-  color: #fff;
+  color: rgb(134,141,151);
   font-size: 21px;
   font-weight: 600;
+  transition: 0.3s ease;
+
+}
+
+
+@media (max-width:768px){
+  .left_div {
+    width: 12%;
+    left: -270px;
+  
+}
+.right_div {
+  width: 100%;
+  margin-left: 0;
+  display: inline-block;
+}
 }
 
 
